@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions for Student Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="fade-in">
+            <h1>Socho</h1>
+            <p>Share the challenges you face daily and how technology can solve them!</p>
+        </header>
+        <form action="https://formsubmit.co/84dcb4f44c441873df8072dccdf91805" method="POST" id="student-form">
+            <!-- Hidden inputs for FormSubmit -->
+            <input type="hidden" name="_subject" value="New Student Challenge Submission">
+            <input type="hidden" name="_next" value="http://yourwebsite.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Section 1: About You -->
+            <section class="form-section fade-in">
+                <h2>About You</h2>
+                <div class="form-group">
+                    <label for="education-level">What is your current level of education? *</label>
+                    <select id="education-level" name="education-level" required>
+                        <option value="">Select an option</option>
+                        <option value="High School">High School</option>
+                        <option value="College/University (Undergraduate)">College/University (Undergraduate)</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="text" id="education-other" name="education-other" placeholder="Please specify" class="hidden">
+                </div>
+                <div class="form-group">
+                    <label for="field-of-study">What is your primary field of study or interest?</label>
+                    <input type="text" id="field-of-study" name="field-of-study" placeholder="E.g., Computer Science, Biology, Arts">
+                </div>
+                <div class="form-group">
+                    <label for="tech-comfort">How comfortable are you with using technology? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="tech-comfort" value="1" required> 1 (Not comfortable)</label>
+                        <label><input type="radio" name="tech-comfort" value="2"> 2</label>
+                        <label><input type="radio" name="tech-comfort" value="3"> 3</label>
+                        <label><input type="radio" name="tech-comfort" value="4"> 4</label>
+                        <label><input type="radio" name="tech-comfort" value="5"> 5 (Very comfortable)</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Your Daily Challenges -->
+            <section class="form-section fade-in">
+                <h2>Your Daily Challenges</h2>
+                <div class="form-group">
+                    <label for="problem">What is one problem you face in your daily student life? *</label>
+                    <textarea id="problem" name="problem" placeholder="Describe the issue (e.g., studying, time management)" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="problem-impact">How does this problem affect you? *</label>
+                    <textarea id="problem-impact" name="problem-impact" placeholder="E.g., causes stress, wastes time" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="existing-tech">Have you used any technology that partially solves this problem?</label>
+                    <textarea id="existing-tech" name="existing-tech" placeholder="If yes, mention the tool and what's missing. If no, write 'No'."></textarea>
+                </div>
+            </section>
+
+            <!-- Section 3: Imagine a Tech Solution -->
+            <section class="form-section fade-in">
+                <h2>Imagine a Tech Solution</h2>
+                <div class="form-group">
+                    <label for="tech-solution">If you could design a technology to solve this problem, what would it do? *</label>
+                    <textarea id="tech-solution" name="tech-solution" placeholder="Describe your dream app or device" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>What type of technology could solve this problem? * (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="tech-type" value="Mobile App"> Mobile App</label>
+                        <label><input type="checkbox" name="tech-type" value="Website"> Website</label>
+                        <label><input type="checkbox" name="tech-type" value="Wearable Device"> Wearable Device</label>
+                        <label><input type="checkbox" name="tech-type" value="AI or Virtual Assistant"> AI or Virtual Assistant</label>
+                        <label><input type="checkbox" name="tech-type" value="Hardware/Gadget"> Hardware/Gadget</label>
+                        <label><input type="checkbox" name="tech-type" value="Other"> Other</label>
+                        <input type="text" id="tech-type-other" name="tech-type-other" placeholder="Please specify" class="hidden">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="importance">How important is it to solve this problem? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="importance" value="1" required> 1 (Not important)</label>
+                        <label><input type="radio" name="importance" value="2"> 2</label>
+                        <label><input type="radio" name="importance" value="3"> 3</label>
+                        <label><input type="radio" name="importance" value="4"> 4</label>
+                        <label><input type="radio" name="importance" value="5"> 5 (Extremely important)</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Wrap-Up -->
+            <section class="form-section fade-in">
+                <h2>Wrap-Up</h2>
+                <div class="form-group">
+                    <label for="other-ideas">Any other problems or tech ideas to share?</label>
+                    <textarea id="other-ideas" name="other-ideas" placeholder="Share more challenges or ideas"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Want to discuss your ideas further? Provide your contact info.</label>
+                    <input type="text" id="contact" name="contact" placeholder="Email or phone (optional)">
+                </div>
+                <div class="form-group">
+                    <label for="tech-name">If your tech idea becomes reality, what would you name it?</label>
+                    <input type="text" id="tech-name" name="tech-name" placeholder="E.g., StudyBuddy App">
+                </div>
+            </section>
+
+            <button type="submit" class="slide-in">Submit Your Ideas</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
